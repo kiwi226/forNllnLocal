@@ -1,0 +1,157 @@
+@charset "UTF-8";
+	.content_body > form {
+		display: flex;
+		height: 4rem;
+	}
+	.content_body > form > .searchBox {
+		flex: 1;
+		margin-bottom: 0.5rem;
+		margin-left: 0.5rem;
+		align-items: center;
+		font-size: 1.4rem;
+		font-family: 'GmarketSansMedium';
+	} 
+	.searchBox select {
+		width: 11.5rem;
+		height: 3rem;
+		border-radius: 0.3rem;
+		margin-left: 1rem;
+		padding: 0.2rem 0.3rem;
+		box-shadow: 0 0 0.1rem #505050;
+		font-size: 1.6rem;
+	}
+	.searchBox select:focus {
+		outline: none;
+		box-shadow: 0 0 0.2rem #505050;
+	}
+	.searchBox option {
+		font-size: 1.6rem;
+	}
+	.searchBox .inputBox {
+		margin-left: 0.5rem;
+		border-radius: 0.3rem;
+	}
+	.searchBox input {
+		width: 18rem;
+		height: 2.6rem;
+		border-top-left-radius: 0.3rem;
+		border-bottom-left-radius: 0.3rem;
+		border: none;
+		padding: 0.2rem 0.3rem;
+		box-shadow: 0 0 0.1rem #505050;
+		font-size: 1.6rem;
+		z-index: 10;
+	}
+	.searchBox input[type=date] {
+		width: 14.5rem;
+		border-radius: 0.3rem;
+		margin-left: 0.5rem;
+	}
+	.searchBox input:focus{
+		outline: none;
+	}
+	.searchBox input[type=date]:focus {
+		box-shadow: 0 0 0.2rem #505050;
+	}
+	input[type="date"]::-webkit-calendar-picker-indicator {
+		cursor: pointer;
+	}
+	.searchBox button {
+		background: #ffffff;
+		background-image: url('/project/images/search.jpg');
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 3rem;
+		height: 3rem;
+		border-top-right-radius: 0.3rem;
+		border-bottom-right-radius: 0.3rem;
+		border: none;
+		box-shadow: 0 0 0.1rem #505050;
+		font-size: 1.6rem;
+		z-index: 10;
+		cursor: pointer;
+	}
+	.content_body > table {
+		border: 0.2rem solid silver;
+		border-radius: 0.8rem;
+		width: 100%;
+	}
+	.content_body > table tr {
+		display: flex;
+		background: #f8f7f2;
+		border-bottom: 0.1rem solid silver;
+		margin-top: 0.2rem;
+		align-items: center;
+		height: 3rem;
+	}
+	.content_body > table tr:first-of-type {
+		background: silver;
+		border-radius: 0.5rem;
+		margin-top: 0rem;
+	}
+	.content_body > table tr:hover:not(:first-of-type) {
+		background: rgba(192, 192, 192, 0.3);
+	}
+	.content_body > table tr:nth-of-type(2) {
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+	}
+	.content_body table tr:last-of-type {
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-bottom: none;
+	}
+	.content_body > table tr td,th {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		border-right: 0.2rem solid silver;
+		height: 2.6rem;
+		font-size: 1.6rem;
+	}
+	.content_body > table tr td>a {
+		font-size: 1.6rem;
+	}
+	.content_body > table tr th {
+		border-right: 0.2rem solid #f8f7f2;
+	}
+	/* .content_body table tr > *:nth-of-type(4) {
+		flex: 3;
+	}
+	.content_body table tr > *:nth-of-type(5) {
+		flex: 3;
+	} */
+	.content_body table tr > *:last-of-type {
+		border-right: none;
+	}
+	.content_body table tr > td:hover {
+		font-weight: bold;
+	}
+	.content_body .page {
+		justify-content: center;
+		align-items: center;
+		height: 5rem;
+	}
+	.content_body .page a {
+		display: flex;
+		margin: 0 1rem;
+		width: 1.5rem;
+		justify-content: center;
+		align-items: center;
+		font-family: sans-serif;
+		font-size: 1.8rem;
+	}
+	.content_body a:link {
+		color: #000;
+		text-decoration: none;
+	}
+	.content_body a:visited {
+		color: #000;
+		text-decoration: none;
+	}
+	.content_body a:hover {
+		font-weight: bold;
+		text-decoration: underline;
+	}

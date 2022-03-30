@@ -1,0 +1,90 @@
+@charset "UTF-8";
+	form {
+		display: flex;
+	}
+	.content_body table {
+		border: 0.2rem solid silver;
+		border-radius: 0.8rem;
+		flex-basis: 51%;
+	}
+	.content_body table tr {
+		display: flex;
+		background: #f8f7f2;
+		border-bottom: 0.1rem solid silver;
+		align-items: center;
+		height: 3.4rem;
+	}
+	.content_body table tr.addrRow {
+		height: 10rem;
+	}
+	.content_body table tr.last {
+		height: 5.4rem;
+	}
+	.content_body table tr:last-of-type {
+		border-bottom: none;
+	}
+	.content_body table tr th,td {
+		display: flex;
+		height: 3.5rem;
+		font-size: 1.6rem;
+	}
+	.content_body table tr th {
+		background: rgba(192,192,192,0.5);
+		flex: 1.5;
+		justify-content: center;
+		align-items: center;
+		border-right: 0.2rem solid silver;
+	}
+	.content_body table tr td {
+		flex: 3;
+		padding-left: 1.2rem;
+		padding-right: 1.2rem;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.content_body table tr:first-of-type > th{
+		border-top-left-radius: 0.5rem;
+		height: 3.4rem;
+	}
+	.content_body table tr.last th,td {
+		height: 5.5rem;
+	}
+	.content_body table tr:last-of-type td {
+		justify-content: center;
+	}
+	input,textarea {
+		width: 100%;
+		height: 2rem;
+		box-shadow: 0 0 0.1rem #505050;
+		padding: 0.2rem 0.3rem;
+		font-size: 1.6rem;
+		z-index: 10;
+	}
+	textarea {
+		height: 4rem;
+		resize: none;
+	}
+	input[name=product_name],[name=price],[name=cost] {
+		width: 25rem;
+	}
+	input[type=submit] {
+		background: #59645C;
+		border: none;
+		border-radius: 0.8rem;		
+		width: 7rem;
+		height: 2.4rem;
+		margin: 0.3rem 0.3rem 0.3rem 0.5rem;
+		padding: 0.3rem;
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: bold;
+		box-shadow: 0 0.15rem 0.15rem #505050;
+		cursor:pointer;
+	}
+	input[type=submit]:active {
+		margin: 0.45rem 0.3rem 0.15rem 0.5rem;
+		box-shadow: 0 0 0.1rem black;
+	}
+	input[type=submit]:focus {
+		outline: none;
+	}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+	form {
+		display: flex;
+	}
+	.content_body table {
+		border: 0.2rem solid silver;
+		border-radius: 0.8rem;
+		flex-basis: 51%;
+	}
+	.content_body table tr {
+		display: flex;
+		background: #f8f7f2;
+		border-bottom: 0.1rem solid silver;
+		align-items: center;
+		height: 3.4rem;
+	}
+	.content_body table tr.last {
+		height: 5.4rem;
+	}
+	.content_body table tr:last-of-type {
+		border-bottom: none;
+	}
+	.content_body table tr th,td {
+		display: flex;
+		height: 3.5rem;
+		font-size: 1.6rem;
+	}
+	.content_body table tr th {
+		background: rgba(192,192,192,0.5);
+		flex: 1.5;
+		justify-content: center;
+		align-items: center;
+		border-right: 0.2rem solid silver;
+	}
+	.content_body table tr td {
+		flex: 3;
+		padding-left: 1.2rem;
+		padding-right: 1.2rem;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.content_body table tr:first-of-type > th{
+		border-top-left-radius: 0.5rem;
+		height: 3.4rem;
+	}
+	.content_body table tr:last-of-type td {
+		justify-content: center;
+	}
+	input {
+		width: 20rem;
+		height: 2rem;
+		box-shadow: 0 0 0.1rem #505050;
+		padding: 0.2rem 0.3rem;
+		font-size: 1.6rem;
+		z-index: 10;
+	}
+	td > div {
+		width: 100%;
+		align-items: center;
+	}
+	td > div.msg {
+		width: auto;
+		margin: 0 1rem;
+		font-size: 1.2rem;
+		color: red;
+	}
+	input[name=customer_name],[name=customer_tel],[name=customer_reg_num],[name=customer_email] {
+		width: 20rem;
+	}
+	input[id=postcode] {
+		width: 15rem;
+	}
+	input[type=submit] {
+		background: #59645C;
+		border: none;
+		border-radius: 0.8rem;		
+		width: 7rem;
+		height: 2.4rem;
+		margin: 0.3rem 0.3rem 0.3rem 0.5rem;
+		padding: 0.3rem;
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: bold;
+		box-shadow: 0 0.15rem 0.15rem #505050;
+	}
+	input[type=submit]:active {
+		margin: 0.45rem 0.3rem 0.15rem 0.5rem;
+		box-shadow: 0 0 0.1rem black;
+	}
+	input[type=submit]:focus {
+		outline: none;
+	}
+	input[type=button] {
+		background: #59645C;
+		border: none;
+		border-radius: 0.8rem;
+		width: 8rem;
+		height: 2rem;
+		margin: 0 2.5rem 0.3rem 1rem;
+		padding: 0 0.1rem;
+		font-size: 1.2rem;
+		color: #fff;
+		font-weight: bold;
+		box-shadow: 0 0.15rem 0.15rem #505050;
+	}
+	input[type=button]:active {
+		margin: 0.15rem 2.5rem 0.15rem 1rem;
+		box-shadow: 0 0 0.1rem black;
+	}
+	input[type=submit]:hover, input[type=button]:hover {
+		cursor: pointer;
+	}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+*  {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 10px;
+		vertical-align: baseline;
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+	body {
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		flex-direction: column;
+		overflow: hidden;
+		background: #f8f7f2;
+	}
+	div{
+		display: flex;
+	}
+	@font-face {
+		font-family: 'paybooc-Medium';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	@font-face {
+    	font-family: 'paybooc-Bold';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	@font-face {
+    	font-family: 'GmarketSansBold';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	@font-face {
+    	font-family: 'GmarketSansMedium';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	form {
+		display: flex;
+		flex-basis: 10%;
+		align-items: center;
+		justify-content: center;
+	}
+	select {
+		height: 3rem;
+		margin: 0 0.5rem;
+		font-size: 1.6rem;	
+		box-shadow: 0 0 0.1rem #505050;
+	}
+	option {
+		height: 3rem;
+		font-size: 1.6rem;
+	}
+	input[name=keyword] {
+		height: 2.6rem;
+		width: 30rem;
+		box-shadow: 0 0 0.1rem #505050;
+		padding: 0.2rem 0.3rem;
+		font-size: 1.6rem;
+		z-index: 10;
+	}
+	input[type=submit] {
+		background: #59645C;
+		border: none;
+		border-radius: 0.8rem;		
+		width: 6rem;
+		height: 2.6rem;
+		margin: 0.25rem 0.3rem 0.35rem 0.5rem;
+		padding: 0.3rem;
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: bold;
+		box-shadow: 0 0.15rem 0.15rem #505050;
+	}
+	input[type=submit]:active {
+		margin: 0.4rem 0.3rem 0.2rem 0.5rem;
+		box-shadow: 0 0 0.1rem black;
+	}
+	input[type=submit]:focus {
+		outline: none;
+	}
+	table {
+		border: 0.2rem solid silver;
+		border-radius: 0.8rem;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	}
+	table tr {
+		display: flex;
+		justify-content: center;
+		background: #f8f7f2;
+		border-bottom: 0.1rem solid silver;
+		margin-top: 0.2rem;
+		height: 3rem;
+	}
+	table tr:first-of-type {
+		background: silver;
+		border-radius: 0.5rem;
+		margin-top: 0;
+	}
+	table tr:hover:not(:first-of-type) {
+		background: rgba(192, 192, 192, 0.3);
+	}
+	table tr:nth-of-type(2) {
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+	}
+	table tr:last-of-type {
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-bottom: none;
+	}
+	table tr td,th {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		border-right: 0.2rem solid silver;
+		height: 3rem;
+		font-size: 1.6rem;
+	}
+	table tr td>a {
+		font-size: 1.6rem;
+	}
+	table tr th {
+		border-right: 0.2rem solid #f8f7f2;
+	}
+	
+	table tr > *:last-of-type {
+		border-right: none;
+	}
+	table tr > td:hover {
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
